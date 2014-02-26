@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0FB77B183EEED8000EB132 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0FB77A183EEED8000EB132 /* AVFoundation.framework */; };
 		4A40A4C91839BD4500DDA344 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A40A4C81839BD4500DDA344 /* Foundation.framework */; };
 		4A40A4CB1839BD4500DDA344 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A40A4CA1839BD4500DDA344 /* CoreGraphics.framework */; };
 		4A40A4CD1839BD4500DDA344 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A40A4CC1839BD4500DDA344 /* UIKit.framework */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A0FB77A183EEED8000EB132 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4A40A4C51839BD4500DDA344 /* TrickCover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrickCover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A40A4C81839BD4500DDA344 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4A40A4CA1839BD4500DDA344 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0FB77B183EEED8000EB132 /* AVFoundation.framework in Frameworks */,
 				4A40A4CB1839BD4500DDA344 /* CoreGraphics.framework in Frameworks */,
 				4A40A4CD1839BD4500DDA344 /* UIKit.framework in Frameworks */,
 				4A40A4C91839BD4500DDA344 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		4A40A4C71839BD4500DDA344 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A0FB77A183EEED8000EB132 /* AVFoundation.framework */,
 				4A40A4C81839BD4500DDA344 /* Foundation.framework */,
 				4A40A4CA1839BD4500DDA344 /* CoreGraphics.framework */,
 				4A40A4CC1839BD4500DDA344 /* UIKit.framework */,
@@ -460,6 +464,7 @@
 				4A40A4F91839BD4600DDA344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A40A4FA1839BD4600DDA344 /* Build configuration list for PBXNativeTarget "TrickCoverTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +473,7 @@
 				4A40A4FC1839BD4600DDA344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

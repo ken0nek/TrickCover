@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CameraManager.h"
 
 @interface ViewController : UIViewController
 

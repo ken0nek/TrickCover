@@ -22,6 +22,12 @@
 		4A40A4EA1839BD4600DDA344 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A40A4CC1839BD4500DDA344 /* UIKit.framework */; };
 		4A40A4F21839BD4600DDA344 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A40A4F01839BD4600DDA344 /* InfoPlist.strings */; };
 		4A40A4F41839BD4600DDA344 /* TrickCoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40A4F31839BD4600DDA344 /* TrickCoverTests.m */; };
+		4ACCD8D918C87CBD00D2557F /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD8D818C87CBD00D2557F /* InitialViewController.m */; };
+		4ACCD8DC18C87D1100D2557F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD8DB18C87D1100D2557F /* MenuViewController.m */; };
+		4ACCD8DF18C87D1F00D2557F /* CoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD8DE18C87D1F00D2557F /* CoverViewController.m */; };
+		4ACCD8E418C8800B00D2557F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACCD8E318C8800B00D2557F /* CoreMedia.framework */; };
+		4ACCD8E618C8803700D2557F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACCD8E518C8803700D2557F /* CoreVideo.framework */; };
+		4ACCD8E918C8808F00D2557F /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD8E818C8808F00D2557F /* CameraManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,16 @@
 		4A40A4EF1839BD4600DDA344 /* TrickCoverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrickCoverTests-Info.plist"; sourceTree = "<group>"; };
 		4A40A4F11839BD4600DDA344 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A40A4F31839BD4600DDA344 /* TrickCoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrickCoverTests.m; sourceTree = "<group>"; };
+		4ACCD8D718C87CBD00D2557F /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		4ACCD8D818C87CBD00D2557F /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		4ACCD8DA18C87D1100D2557F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		4ACCD8DB18C87D1100D2557F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		4ACCD8DD18C87D1F00D2557F /* CoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverViewController.h; sourceTree = "<group>"; };
+		4ACCD8DE18C87D1F00D2557F /* CoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverViewController.m; sourceTree = "<group>"; };
+		4ACCD8E318C8800B00D2557F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4ACCD8E518C8803700D2557F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		4ACCD8E718C8808F00D2557F /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
+		4ACCD8E818C8808F00D2557F /* CameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACCD8E618C8803700D2557F /* CoreVideo.framework in Frameworks */,
+				4ACCD8E418C8800B00D2557F /* CoreMedia.framework in Frameworks */,
 				4A0FB77B183EEED8000EB132 /* AVFoundation.framework in Frameworks */,
 				4A40A4CB1839BD4500DDA344 /* CoreGraphics.framework in Frameworks */,
 				4A40A4CD1839BD4500DDA344 /* UIKit.framework in Frameworks */,
@@ -104,6 +122,9 @@
 		4A40A4C71839BD4500DDA344 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4ACCD8EA18C8809600D2557F /* CameraManager */,
+				4ACCD8E518C8803700D2557F /* CoreVideo.framework */,
+				4ACCD8E318C8800B00D2557F /* CoreMedia.framework */,
 				4A0FB77A183EEED8000EB132 /* AVFoundation.framework */,
 				4A40A4C81839BD4500DDA344 /* Foundation.framework */,
 				4A40A4CA1839BD4500DDA344 /* CoreGraphics.framework */,
@@ -119,6 +140,12 @@
 				4A40A4D71839BD4500DDA344 /* AppDelegate.h */,
 				4A40A4D81839BD4500DDA344 /* AppDelegate.m */,
 				4A40A4DA1839BD4500DDA344 /* Main.storyboard */,
+				4ACCD8D718C87CBD00D2557F /* InitialViewController.h */,
+				4ACCD8D818C87CBD00D2557F /* InitialViewController.m */,
+				4ACCD8DA18C87D1100D2557F /* MenuViewController.h */,
+				4ACCD8DB18C87D1100D2557F /* MenuViewController.m */,
+				4ACCD8DD18C87D1F00D2557F /* CoverViewController.h */,
+				4ACCD8DE18C87D1F00D2557F /* CoverViewController.m */,
 				4A40A4DD1839BD4500DDA344 /* ViewController.h */,
 				4A40A4DE1839BD4500DDA344 /* ViewController.m */,
 				4A40A4E01839BD4500DDA344 /* Images.xcassets */,
@@ -154,6 +181,15 @@
 				4A40A4F01839BD4600DDA344 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4ACCD8EA18C8809600D2557F /* CameraManager */ = {
+			isa = PBXGroup;
+			children = (
+				4ACCD8E718C8808F00D2557F /* CameraManager.h */,
+				4ACCD8E818C8808F00D2557F /* CameraManager.m */,
+			);
+			name = CameraManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACCD8DF18C87D1F00D2557F /* CoverViewController.m in Sources */,
 				4A40A4DF1839BD4500DDA344 /* ViewController.m in Sources */,
 				4A40A4D91839BD4500DDA344 /* AppDelegate.m in Sources */,
+				4ACCD8E918C8808F00D2557F /* CameraManager.m in Sources */,
 				4A40A4D51839BD4500DDA344 /* main.m in Sources */,
+				4ACCD8D918C87CBD00D2557F /* InitialViewController.m in Sources */,
+				4ACCD8DC18C87D1100D2557F /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

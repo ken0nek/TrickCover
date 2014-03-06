@@ -141,7 +141,6 @@
 		4A40A4C71839BD4500DDA344 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4ACCD8EA18C8809600D2557F /* CameraManager */,
 				4ACCD8E518C8803700D2557F /* CoreVideo.framework */,
 				4ACCD8E318C8800B00D2557F /* CoreMedia.framework */,
 				4A0FB77A183EEED8000EB132 /* AVFoundation.framework */,
@@ -158,6 +157,7 @@
 			children = (
 				4A40A4D71839BD4500DDA344 /* AppDelegate.h */,
 				4A40A4D81839BD4500DDA344 /* AppDelegate.m */,
+				4A503F5B18C8EF55005A838D /* libs */,
 				4ACCD90A18C8E0DC00D2557F /* views */,
 				4ACCD90B18C8E0E800D2557F /* controllers */,
 				4ACCD8EB18C8847900D2557F /* images */,
@@ -196,25 +196,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4ACCD8EA18C8809600D2557F /* CameraManager */ = {
+		4A503F5B18C8EF55005A838D /* libs */ = {
 			isa = PBXGroup;
 			children = (
 				4ACCD8E718C8808F00D2557F /* CameraManager.h */,
 				4ACCD8E818C8808F00D2557F /* CameraManager.m */,
 			);
-			name = CameraManager;
+			path = libs;
 			sourceTree = "<group>";
 		};
 		4ACCD8EB18C8847900D2557F /* images */ = {
 			isa = PBXGroup;
 			children = (
-				4ACCD8F118C8866100D2557F /* Setting */,
+				4ACCD8F118C8866100D2557F /* Settings */,
 				4ACCD8F018C8864E00D2557F /* InitialView */,
 				4ACCD8F218C8867500D2557F /* MenuVIew */,
 				4ACCD8F418C8871800D2557F /* CameraVIew */,
 				4ACCD8F318C8870A00D2557F /* FrameView */,
 			);
-			name = images;
+			path = images;
 			sourceTree = "<group>";
 		};
 		4ACCD8EC18C8848500D2557F /* AppIcon */ = {
@@ -242,13 +242,13 @@
 			name = InitialView;
 			sourceTree = "<group>";
 		};
-		4ACCD8F118C8866100D2557F /* Setting */ = {
+		4ACCD8F118C8866100D2557F /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				4ACCD8EC18C8848500D2557F /* AppIcon */,
 				4ACCD8ED18C8848E00D2557F /* LaunchImage */,
 			);
-			name = Setting;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		4ACCD8F218C8867500D2557F /* MenuVIew */ = {
@@ -260,6 +260,7 @@
 				4ACCD90518C8C68400D2557F /* CameraButton.png */,
 			);
 			name = MenuVIew;
+			path = MenuView;
 			sourceTree = "<group>";
 		};
 		4ACCD8F318C8870A00D2557F /* FrameView */ = {
@@ -283,7 +284,7 @@
 				4ACCD90718C8C70C00D2557F /* MenuView.h */,
 				4ACCD90818C8C70C00D2557F /* MenuView.m */,
 			);
-			name = views;
+			path = views;
 			sourceTree = "<group>";
 		};
 		4ACCD90B18C8E0E800D2557F /* controllers */ = {
@@ -298,7 +299,7 @@
 				4ACCD8F818C8878F00D2557F /* FrameViewController.h */,
 				4ACCD8F918C8878F00D2557F /* FrameViewController.m */,
 			);
-			name = controllers;
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +451,7 @@
 				4A40A4DB1839BD4500DDA344 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4A40A4F01839BD4600DDA344 /* InfoPlist.strings */ = {

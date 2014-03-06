@@ -34,12 +34,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qZ-GY-KW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="259" y="-453"/>
+            <point key="canvasLocation" x="259" y="399"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="wBg-Ne-r6I">
             <objects>
-                <viewController id="Q2j-2D-wWj" customClass="MenuViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Menu" id="Q2j-2D-wWj" customClass="MenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1XJ-lP-qbf">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PR1-nW-zJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="259" y="415"/>
+            <point key="canvasLocation" x="259" y="-461"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="RFx-dt-eOy">

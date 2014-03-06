@@ -32,6 +32,11 @@
 		4ACCD8FE18C89C7400D2557F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCD8FD18C89C7400D2557F /* Default-568h@2x.png */; };
 		4ACCD90118C89F2700D2557F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCD8FF18C89F2700D2557F /* Default.png */; };
 		4ACCD90218C89F2700D2557F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCD90018C89F2700D2557F /* Default@2x.png */; };
+		4ACCD90618C8C68400D2557F /* CameraButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCD90518C8C68400D2557F /* CameraButton.png */; };
+		4ACCD90918C8C70C00D2557F /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCD90818C8C70C00D2557F /* MenuView.m */; };
+		4ACCD90E18C8E15E00D2557F /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCD90C18C8E15E00D2557F /* facebook.png */; };
+		4ACCD90F18C8E15E00D2557F /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCD90D18C8E15E00D2557F /* gear.png */; };
+		4ACCD91118C8E17300D2557F /* trickcover_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACCD91018C8E17300D2557F /* trickcover_title.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,12 @@
 		4ACCD8FD18C89C7400D2557F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4ACCD8FF18C89F2700D2557F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4ACCD90018C89F2700D2557F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4ACCD90518C8C68400D2557F /* CameraButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraButton.png; sourceTree = "<group>"; };
+		4ACCD90718C8C70C00D2557F /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		4ACCD90818C8C70C00D2557F /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		4ACCD90C18C8E15E00D2557F /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		4ACCD90D18C8E15E00D2557F /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		4ACCD91018C8E17300D2557F /* trickcover_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trickcover_title.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,15 +158,8 @@
 			children = (
 				4A40A4D71839BD4500DDA344 /* AppDelegate.h */,
 				4A40A4D81839BD4500DDA344 /* AppDelegate.m */,
-				4A40A4DA1839BD4500DDA344 /* Main.storyboard */,
-				4ACCD8D718C87CBD00D2557F /* InitialViewController.h */,
-				4ACCD8D818C87CBD00D2557F /* InitialViewController.m */,
-				4ACCD8DA18C87D1100D2557F /* MenuViewController.h */,
-				4ACCD8DB18C87D1100D2557F /* MenuViewController.m */,
-				4ACCD8F518C8876400D2557F /* CameraViewController.h */,
-				4ACCD8F618C8876400D2557F /* CameraViewController.m */,
-				4ACCD8F818C8878F00D2557F /* FrameViewController.h */,
-				4ACCD8F918C8878F00D2557F /* FrameViewController.m */,
+				4ACCD90A18C8E0DC00D2557F /* views */,
+				4ACCD90B18C8E0E800D2557F /* controllers */,
 				4ACCD8EB18C8847900D2557F /* images */,
 				4A40A4E01839BD4500DDA344 /* Images.xcassets */,
 				4A40A4CF1839BD4500DDA344 /* Supporting Files */,
@@ -250,6 +254,10 @@
 		4ACCD8F218C8867500D2557F /* MenuVIew */ = {
 			isa = PBXGroup;
 			children = (
+				4ACCD91018C8E17300D2557F /* trickcover_title.png */,
+				4ACCD90C18C8E15E00D2557F /* facebook.png */,
+				4ACCD90D18C8E15E00D2557F /* gear.png */,
+				4ACCD90518C8C68400D2557F /* CameraButton.png */,
 			);
 			name = MenuVIew;
 			sourceTree = "<group>";
@@ -266,6 +274,31 @@
 			children = (
 			);
 			name = CameraVIew;
+			sourceTree = "<group>";
+		};
+		4ACCD90A18C8E0DC00D2557F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				4A40A4DA1839BD4500DDA344 /* Main.storyboard */,
+				4ACCD90718C8C70C00D2557F /* MenuView.h */,
+				4ACCD90818C8C70C00D2557F /* MenuView.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		4ACCD90B18C8E0E800D2557F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4ACCD8D718C87CBD00D2557F /* InitialViewController.h */,
+				4ACCD8D818C87CBD00D2557F /* InitialViewController.m */,
+				4ACCD8DA18C87D1100D2557F /* MenuViewController.h */,
+				4ACCD8DB18C87D1100D2557F /* MenuViewController.m */,
+				4ACCD8F518C8876400D2557F /* CameraViewController.h */,
+				4ACCD8F618C8876400D2557F /* CameraViewController.m */,
+				4ACCD8F818C8878F00D2557F /* FrameViewController.h */,
+				4ACCD8F918C8878F00D2557F /* FrameViewController.m */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,13 +377,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACCD90618C8C68400D2557F /* CameraButton.png in Resources */,
 				4A40A4E11839BD4500DDA344 /* Images.xcassets in Resources */,
 				4ACCD90118C89F2700D2557F /* Default.png in Resources */,
 				4ACCD8FC18C8883600D2557F /* icon@2x.png in Resources */,
+				4ACCD90E18C8E15E00D2557F /* facebook.png in Resources */,
 				4A40A4D31839BD4500DDA344 /* InfoPlist.strings in Resources */,
+				4ACCD90F18C8E15E00D2557F /* gear.png in Resources */,
 				4ACCD8FE18C89C7400D2557F /* Default-568h@2x.png in Resources */,
 				4ACCD90218C89F2700D2557F /* Default@2x.png in Resources */,
 				4A40A4DC1839BD4500DDA344 /* Main.storyboard in Resources */,
+				4ACCD91118C8E17300D2557F /* trickcover_title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +411,7 @@
 				4ACCD8E918C8808F00D2557F /* CameraManager.m in Sources */,
 				4A40A4D51839BD4500DDA344 /* main.m in Sources */,
 				4ACCD8FA18C8878F00D2557F /* FrameViewController.m in Sources */,
+				4ACCD90918C8C70C00D2557F /* MenuView.m in Sources */,
 				4ACCD8D918C87CBD00D2557F /* InitialViewController.m in Sources */,
 				4ACCD8DC18C87D1100D2557F /* MenuViewController.m in Sources */,
 			);

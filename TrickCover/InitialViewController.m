@@ -11,6 +11,8 @@
 
 @interface InitialViewController ()
 
+@property (nonatomic, strong) UIImageView *initialImage;
+
 @end
 
 @implementation InitialViewController
@@ -39,6 +41,23 @@
 // 横向きのスプラッシュ画面が作れないため、便宜的に縦向きのViewから横向きのViewに飛ばす
 - (void)viewDidAppear:(BOOL)animated
 {
+    NSString *launchImage;
+    
+    if (([UIScreen mainScreen].bounds.size.height > 480.0f))
+    {
+        // iPhone (3.5inch)
+        launchImage = @"LaunchImage-700-568h";
+    }
+    else
+    {
+        // iPhone (4inch)
+        launchImage = @"LaunchImage-700";
+    }
+    
+    self.initialImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:launchImage]];
+    self.initialImage.frame = self.view.bounds;
+    [self.view addSubview:self.initialImage];
+    
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     MenuViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"Menu"];
     controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;

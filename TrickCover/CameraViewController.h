@@ -1,5 +1,5 @@
 //
-//  CoverViewController.h
+//  CameraViewController.h
 //  TrickCover
 //
 //  Created by Ken Tominaga on 2014/03/06.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoverViewController : UIViewController
+@interface CameraViewController : UIViewController
 
 @end

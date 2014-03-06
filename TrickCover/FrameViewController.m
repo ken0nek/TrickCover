@@ -1,18 +1,18 @@
 //
-//  CoverViewController.m
+//  FrameViewController.m
 //  TrickCover
 //
 //  Created by Ken Tominaga on 2014/03/06.
 //  Copyright (c) 2014年 Tommy. All rights reserved.
 //
 
-#import "CoverViewController.h"
+#import "FrameViewController.h"
 
-@interface CoverViewController ()
+@interface FrameViewController ()
 
 @end
 
-@implementation CoverViewController
+@implementation FrameViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

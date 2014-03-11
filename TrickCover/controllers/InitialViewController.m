@@ -10,9 +10,9 @@
 #import "MenuViewController.h"
 
 @interface InitialViewController ()
-
-@property (nonatomic, strong) UIImageView *initialImage;
-
+{
+    UIImageView *initialImage;
+}
 @end
 
 @implementation InitialViewController
@@ -54,9 +54,9 @@
         launchImage = @"LaunchImage-700";
     }
     
-    self.initialImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:launchImage]];
-    self.initialImage.frame = self.view.bounds;
-    [self.view addSubview:self.initialImage];
+    initialImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:launchImage]];
+    initialImage.frame = self.view.bounds;
+    [self.view addSubview:initialImage];
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     MenuViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"Menu"];

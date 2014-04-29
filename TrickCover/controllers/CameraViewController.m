@@ -10,6 +10,8 @@
 
 @interface CameraViewController ()
 
+@property int frameNumber;
+
 @end
 
 @implementation CameraViewController

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="myv-4H-IYA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="myv-4H-IYA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Camera View Controller-->
@@ -40,17 +40,50 @@
         <scene sceneID="wBg-Ne-r6I">
             <objects>
                 <viewController storyboardIdentifier="Menu" id="Q2j-2D-wWj" customClass="MenuViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1XJ-lP-qbf" customClass="MenuView">
+                    <view key="view" contentMode="scaleToFill" id="1XJ-lP-qbf">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trickcover_title.png" id="tch-Ah-4PN">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear.png" id="aYY-xx-St4">
+                                <rect key="frame" x="165" y="145" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear.png" id="u1i-aT-QMK">
+                                <rect key="frame" x="140" y="170" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhotoLibrary.png" id="B10-jD-hO4">
+                                <rect key="frame" x="236" y="175" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook.png" id="sok-iw-j4K">
+                                <rect key="frame" x="64" y="89" width="40" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CameraButton.png" id="mPa-E6-SDq">
+                                <rect key="frame" x="328" y="184" width="125" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="cameraImage" destination="mPa-E6-SDq" id="Yd7-Mr-emP"/>
+                        <outlet property="fbIcon" destination="sok-iw-j4K" id="wWA-MN-WIo"/>
+                        <outlet property="largeGear" destination="aYY-xx-St4" id="Dsm-jT-chr"/>
+                        <outlet property="photoLibrary" destination="B10-jD-hO4" id="y0h-WI-cx0"/>
+                        <outlet property="smallGear" destination="u1i-aT-QMK" id="AwL-EA-MsV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PR1-nW-zJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="259" y="-461"/>
+            <point key="canvasLocation" x="259" y="-435"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="RFx-dt-eOy">
@@ -68,6 +101,13 @@
             <point key="canvasLocation" x="-171" y="-139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CameraButton.png" width="137" height="99"/>
+        <image name="PhotoLibrary.png" width="101" height="108"/>
+        <image name="facebook.png" width="74" height="143"/>
+        <image name="gear.png" width="71" height="71"/>
+        <image name="trickcover_title.png" width="1136" height="640"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

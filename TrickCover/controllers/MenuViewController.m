@@ -9,19 +9,22 @@
 #import "MenuViewController.h"
 #import "CameraViewController.h"
 #import "FrameViewController.h"
-#import "MenuView.h"
 
 @interface MenuViewController ()
-
-//画面サイズを算出するための変数を用意（screenWには画面横幅、screenHには画面縦幅を代入）
-@property(nonatomic) int screenW;
-@property(nonatomic) int screenH;
-
-//キャッチコピーを閲覧するためのUIViewを用意する※strongを指定してポインタを掴んでおかないと解放されてしまう
-@property (nonatomic, strong) MenuView *mv;
-
-@property (nonatomic) int i;
-@property (nonatomic) BOOL isAnimating;
+{
+    int number;
+    BOOL isAnimating;
+    
+    IBOutlet UIImageView *cameraImage;
+    IBOutlet UIImageView *smallGear;
+    IBOutlet UIImageView *largeGear;
+    IBOutlet UIImageView *fbIcon;
+    IBOutlet UIImageView *photoLibrary;
+    
+    IBOutlet UIButton *cameraButton;
+    IBOutlet UIButton *aboutButton;
+    IBOutlet UIButton *photoButton;
+}
 
 @end
 
@@ -42,23 +45,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    //端末の画面サイズを取得する
-    CGRect deviceScreenSize = [[UIScreen mainScreen] bounds];
+    [self displayViews];
     
-    //画面サイズの横幅、縦幅を定義した変数にそれぞれ代入する
-    self.screenW = deviceScreenSize.size.width;
-    self.screenH = deviceScreenSize.size.height;
-    
-    MenuView *mv = [[MenuView alloc] initWithFrame:CGRectMake(0, 0, self.screenW, self.screenH)];
-    self.view = mv;
-    
-    self.i = 0;
-    
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    self.isAnimating = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,6 +54,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Private method
+
+- (void)displayViews
+{
+    cameraImage.transform = CGAffineTransformMakeRotation(22 * M_PI / 180);
+    
+    fbIcon.transform = CGAffineTransformMakeRotation(22 * M_PI / 180);
+}
+
+- (void)rotateGears{
+    
+}
+
+#pragma mark - Orientation
 
 // 回転処理が存在するかどうかを返す（回転しない）
 - (BOOL)shouldAutorotate
